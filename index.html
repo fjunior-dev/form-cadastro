@@ -12,12 +12,12 @@
 <body>
     <h1 id="title">Formulário de Cadastro</h1>
     <p id="description">Obrigado por deixar sua opinião, em breve entraremos em contato.</p>
-    <form id="survey-form">
+    <form id="survey-form" action="form.php" method="POST" autocomplete="on">
       <label for="name" id="name-label" >Nome <input id="name" type="text" required placeholder="Digite seu nome"/></label>
       <label for="email" id="email-label" >Email <input id="email" type="email" required placeholder="Digite seu email"/></label>
-      <label for="number" id="number-label">Idade <input id="number" type="number" min="1" max="10" required     placeholder="Digite seu número"/></label>
-        <label for="dropdown">Como você descreve suas experiências passadas?
-          <select id="dropdown">
+      <label for="number" id="number-label">Idade <input id="number" type="number" min="1" max="10" required placeholder="Digite seu número"/></label>
+        <label for="exp-dropdown">Como você descreve suas experiências passadas?
+          <select id="exp-dropdown">
                 <option value="opcao1">Desafiadoras e importantes</option>
                 <option value="opcao2">Rotineiras e cansativas</option>
                 <option value="opcao3">Criativas e empolgantes</option>
@@ -41,8 +41,8 @@
       </label>
       </div>
       
-      <label for="dropdown">Algum desafio dentro da sua área?
-          <select id="dropdown">
+      <label for="desafio-dropdown">Algum desafio dentro da sua área?
+          <select id="desafio-dropdown">
                 <option value="opcao1">Comunicação</option>
                 <option value="opcao2">Liderança</option>
                 <option value="opcao3">Trabalho em equipe</option>
