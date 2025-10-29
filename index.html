@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap"     rel="stylesheet">
+    <link rel="stylesheet" href="estilos/styles.css">
+    <title>formulário</title>
+</head>
+<body>
+    <h1 id="title">Formulário de Cadastro</h1>
+    <p id="description">Obrigado por deixar sua opinião, em breve entraremos em contato.</p>
+    <form id="survey-form">
+      <label for="name" id="name-label" >Nome <input id="name" type="text" required placeholder="Digite seu nome"/></label>
+      <label for="email" id="email-label" >Email <input id="email" type="email" required placeholder="Digite seu email"/></label>
+      <label for="number" id="number-label">Idade <input id="number" type="number" min="1" max="10" required     placeholder="Digite seu número"/></label>
+        <label for="dropdown">Como você descreve suas experiências passadas?
+          <select id="dropdown">
+                <option value="opcao1">Desafiadoras e importantes</option>
+                <option value="opcao2">Rotineiras e cansativas</option>
+                <option value="opcao3">Criativas e empolgantes</option>
+                <option value="opcao4">Estressantes e monotónas</option>
+          </select>
+        </label>
+      <div class="form-radio">
+      <p>Escolha a opção que mais lhe agrada:</p>
+      <label>
+        <input type="radio" name="opcao" value="a" class="input-radio"/> Trabalhos manuais
+      </label>
+      
+      <label>
+        <input type="radio" name="opcao" value="b" class="input-radio"/> Tenologia
+      </label>
+      <label>
+        <input type="radio" name="opcao" value="c" class="input-radio"/> Humanas
+      </label>
+      <label>
+        <input type="radio" name="opcao" value="d" class="input-radio"/> Saúde
+      </label>
+      </div>
+      
+      <label for="dropdown">Algum desafio dentro da sua área?
+          <select id="dropdown">
+                <option value="opcao1">Comunicação</option>
+                <option value="opcao2">Liderança</option>
+                <option value="opcao3">Trabalho em equipe</option>
+                <option value="opcao4">Relacionamento</option>
+          </select>
+        </label>
+
+
+       <div class="check-form"> 
+      <p>Marque os desafios que se aplicam:</p>
+      <label>
+        <input type="checkbox" name="opcao" value="c" class="input-checkbox"/> 
+        Financeiro
+      </label>
+      <label>
+        <input type="checkbox" name="opcao" value="d" class="input-checkbox"/> Profissional
+      </label>
+      <label>
+        <input type="checkbox" name="opcao" value="e" class="input-checkbox"/> Oportunidades
+      </label>
+      <label>
+        <input type="checkbox" name="opcao" value="f" class="input-checkbox"/> Família
+      </label>
+      <label>
+        <input type="checkbox" name="opcao" value="g" class="input-checkbox"/> Tempo
+      </label>
+      <label>
+        <input type="checkbox" name="opcao" value="h" class="input-checkbox"/> Idade
+      </label>
+      </div>
+
+      <label for="comentario"> Algum comentário ou sugestão?
+        <textarea id="comentario" name="comentario" placeholder="Escreva seu comentário aqui..."></textarea>
+      </label>
+      <input type="submit" id="submit"/>
+    </form>
+</body>
+</html>
