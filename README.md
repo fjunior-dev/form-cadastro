@@ -45,6 +45,10 @@ projeto/
 - **Secundária:** `#645f9c` - Roxo
 - **Botão:** `#36b376` - Verde
 
+## 🎨 Implementação futura
+- Validação de campos via JS
+- Envio de formulário para coleta de dados
+
 ## 📋 Campos do Formulário
 
 - **Nome:** Campo de texto obrigatório
