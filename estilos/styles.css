@@ -154,3 +154,18 @@ input, button, select, textarea {
   color: #fff;
   transform: scale(1.03);
 }
+
+
+@media (max-width: 600px) {
+
+    body {
+    padding: 20px;
+    font-size: 14px;
+  }
+
+    #survey-form {
+    width: 100%;
+    max-width: 100%;
+    padding: 15px;
+  }
+}
